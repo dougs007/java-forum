@@ -61,14 +61,6 @@ public class Usuario implements UserDetails {
 		this.senha = senha;
 	}
 
-//	public List<Perfil> getPerfis() {
-//		return perfis;
-//	}
-//
-//	public void setPerfis(List<Perfil> perfis) {
-//		this.perfis = perfis;
-//	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
