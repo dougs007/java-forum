@@ -1,5 +1,6 @@
 package br.com.springboot.forum.config.security;
 
+import br.com.springboot.forum.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,10 +14,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
-import br.com.springboot.forum.config.security.service.AutenticacaoService;
-import br.com.springboot.forum.config.security.service.TokenService;
-import br.com.springboot.forum.repository.UsuarioRepository;
 
 @EnableWebSecurity
 @Configuration

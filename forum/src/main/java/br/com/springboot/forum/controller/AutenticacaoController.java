@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.springboot.forum.config.security.service.TokenService;
+import br.com.springboot.forum.config.security.TokenService;
 import br.com.springboot.forum.controller.dto.TokenDTO;
 import br.com.springboot.forum.controller.form.LoginForm;
 

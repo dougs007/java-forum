@@ -1,6 +1,5 @@
 package br.com.springboot.forum.config.swagger;
 
-
 import br.com.springboot.forum.modelo.Usuario;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +16,7 @@ import java.util.Arrays;
 public class SwaggerConfigurations {
 
     @Bean
-    public Docket formumApi() {
+    public Docket forumApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("br.com.springboot.forum"))
@@ -28,7 +27,7 @@ public class SwaggerConfigurations {
                         new ParameterBuilder()
                                 .name("Authorization")
                                 .description("Header para token JWT")
-                                .modelRef(new ModelRef("String"))
+                                .modelRef(new ModelRef("string"))
                                 .parameterType("header")
                                 .required(false)
                                 .build()));
